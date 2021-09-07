@@ -1,0 +1,14 @@
+{
+    "author_name": "",
+	"author_email": "",
+    "project_name": "Project Name",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_short_description": "Web app that combines SvelteKit and FastAPI",
+    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
+    "_copy_without_render": [
+        "*.html",
+        "*.js",
+        "*.svelte",
+        "*.css"
+    ]
+}
