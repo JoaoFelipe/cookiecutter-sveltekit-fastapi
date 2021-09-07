@@ -26,3 +26,6 @@ As sveltekit-fastapi-cookiecutter runs, you will be asked for basic information 
 - *open_source_license*: open source license of you project.
 
 
+## Information
+
+To create this project, I combined information from [this post about deploying backend and frontend apps on the same heroku dyno](https://medium.com/ruby-daily/deploy-backend-and-frontend-apps-on-the-same-heroku-dyno-cfc6978a24d5) and [this post running multiple servers on one dyno](https://medium.com/@nadayar/heroku-fu-multiple-servers-on-one-dyno-6fc68d57b373). 
