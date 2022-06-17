@@ -6,28 +6,30 @@
     "frontend:dev": "svelte-kit dev",
     "backend:dev": "uvicorn app.main:app --reload",
     "build": "svelte-kit build",
+    "package": "svelte-kit package",
     "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
     "start": "node server/App.js",
-    "lint": "prettier --ignore-path .gitignore  --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-node": "^1.0.0-next.45",
-    "@sveltejs/kit": "^1.0.0-next.164",
+    "@sveltejs/adapter-node": "^1.0.0-next.78",
+    "@sveltejs/kit": "^1.0.0-next.350",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^4.0.0",
     "npm-run-all": "^4.1.5",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-svelte3": "^3.2.0",
-    "prettier": "~2.2.1",
-    "prettier-plugin-svelte": "^2.2.0",
-    "svelte": "^3.34.0"
+    "prettier": "^2.6.2",
+    "prettier-plugin-svelte": "^2.7.0",
+    "svelte": "^3.46.0"
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/fira-mono": "^4.2.2",
-    "@lukeed/uuid": "^2.0.0",
+    "@fontsource/fira-mono": "^4.5.8",
     "cookie": "^0.4.1",
-    "express": "^4.17.1",
-    "http-proxy-middleware": "^2.0.1"
+    "express": "^4.18.1",
+    "http-proxy-middleware": "^2.0.6"
   }
 }
+

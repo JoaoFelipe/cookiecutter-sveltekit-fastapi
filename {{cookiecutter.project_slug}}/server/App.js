@@ -1,4 +1,4 @@
-import { assetsMiddleware, prerenderedMiddleware, kitMiddleware } from '../build/middlewares.js';
+import { handler } from '../build/handler.js';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 import express from 'express';
 
@@ -12,7 +12,7 @@ app.use(
       changeOrigin: true,
     })
 );
-app.use(assetsMiddleware, prerenderedMiddleware, kitMiddleware);
+app.use(handler);
 
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

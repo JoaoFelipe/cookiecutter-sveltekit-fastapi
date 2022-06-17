@@ -1,11 +1,9 @@
 /** @type {import('@sveltejs/kit').Config} */
-import node from "@sveltejs/adapter-node";
+import adapter from '@sveltejs/adapter-node';
 
 const config = {
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
-		adapter: node({ env: { port: process.env.PORT } }),
+		adapter: adapter(),
 		vite: () => ({
 			server: {
 				proxy: {
@@ -15,7 +13,12 @@ const config = {
 					}
 				}
 			}
-		})
+		}),
+		
+		// Override http methods in the Todo forms
+		methodOverride: {
+			allowed: ['PATCH', 'DELETE']
+		}
 	}
 };
 

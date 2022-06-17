@@ -22,7 +22,7 @@
 
 	<div class="counter-viewport">
 		<div class="counter-digits" style="transform: translate(0, {100 * offset}%)">
-			<strong style="top: -100%" aria-hidden="true">{Math.floor($displayed_count + 1)}</strong>
+			<strong class="hidden" aria-hidden="true">{Math.floor($displayed_count + 1)}</strong>
 			<strong>{Math.floor($displayed_count)}</strong>
 		</div>
 	</div>
@@ -50,6 +50,7 @@
 		justify-content: center;
 		border: 0;
 		background-color: transparent;
+		touch-action: manipulation;
 		color: var(--text-color);
 		font-size: 2rem;
 	}
@@ -79,13 +80,12 @@
 
 	.counter-viewport strong {
 		position: absolute;
-		display: block;
+		display: flex;
 		width: 100%;
 		height: 100%;
 		font-weight: 400;
 		color: var(--accent-color);
 		font-size: 4rem;
-		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
@@ -94,5 +94,10 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
+	}
+
+	.hidden {
+		top: -100%;
+		user-select: none;
 	}
 </style>

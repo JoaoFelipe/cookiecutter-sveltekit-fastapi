@@ -3,6 +3,11 @@ node_modules
 /build
 /.svelte-kit
 /package
+.env
+.env.*
+!.env.example
+.vercel
+.output
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

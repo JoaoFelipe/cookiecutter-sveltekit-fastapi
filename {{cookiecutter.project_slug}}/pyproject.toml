@@ -5,9 +5,9 @@ description = "{{ cookiecutter.project_short_description }}"
 authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 
 [tool.poetry.dependencies]
-python = "3.9.7"
-fastapi = "^0.68.1"
-uvicorn = {extras = ["standard"], version = "^0.15.0"}
+python = "3.10.5"
+fastapi = "^0.78.0"
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
 honcho = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
