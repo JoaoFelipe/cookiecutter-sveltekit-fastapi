@@ -13,7 +13,7 @@ pip install cookiecutter
 After installing cookiecutter, use the sveltekit-fastapi-cookiecutter:
 
 ```bash
-cookiecutter https://github.com/JoaoFelipe/sveltekit-fastapi-cookiecutter.git
+cookiecutter https://github.com/JoaoFelipe/cookiecutter-sveltekit-fastapi
 ```
 
 As sveltekit-fastapi-cookiecutter runs, you will be asked for basic information about your custom Web app project. You will be prompted for the following information:
